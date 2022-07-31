@@ -9,7 +9,7 @@ class SpeedReward(RewardFunction):
 
     def get_reward(self, player: PlayerData, state: GameState, previous_action: np.ndarray) -> float:
         linear_velocity = player.car_data.linear_velocity
-        reward = math.vecmag(linear_velocity)
+        reward = float(math.vecmag(linear_velocity))
         
         return reward
 
