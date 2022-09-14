@@ -60,7 +60,7 @@ env = rlgym.make(game_speed=1,
                     state_setter=RandomMirrorSetterFlexible()
                     )  
 
-model_file_name = "exit_save"
+model_file_name = "training/models/exit_save"
 
 
 try:
